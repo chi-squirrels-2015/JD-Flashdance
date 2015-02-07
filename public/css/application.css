@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   font-family: helvetica;
   /*color: #e9e9e9;*/
@@ -40,3 +41,8 @@ form > input[type="button"]:hover {
 
 
 /*form > input[type="button"] {}*/
+=======
+.container {
+  max-width: 800px;
+}
+>>>>>>> d814c61945092a76754e98ce0ab1f4dd9f1ad574
