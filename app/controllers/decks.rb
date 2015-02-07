@@ -6,8 +6,8 @@ get "/decks" do
 end
 
 # Show a specific deck (by id)
-get "/decks/:entry_id" do
-  @entry = Entry.find(params[:entry_id])
+get "/decks/:deck_id" do
+  @deck = Deck.find(params[:deck_id])
 
   erb :"/decks/index"
 end
