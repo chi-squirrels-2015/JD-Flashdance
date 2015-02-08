@@ -1,11 +1,31 @@
+<html>
+<head>
+  <title>JD's Flashcard Dance</title>
+  <link rel="stylesheet" href="../../public/css/normalize.css">
+  <link rel="stylesheet" href="../../public/css/application.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+</head>
+<body>
 <div class="container">
-  <h1>JD Flash Dance!</h1>
-  <p>An Online Flash Card Game</p>
-
+  <div class="topbar">
+    <h1>JD Flash Dance!</h1>
+    <p>An Online Flash Card Game</p>
+  </div>
   <form action="/" method="post">
-  Enter a user name to begin:<br>
-  <input type="text" name="name" value="<%= @user.name %>"><br>
-  <input type="submit" value="Start Playing!" />
+  Please login to begin playing:<br>
+  <input type="text" name="name" placeholder="Enter your username" value="<%= @user.name %>"><br>
+  <input type="submit" value="Start Playing!"  />
   </form>
 
+  <div class="bottombar">
+    <p>Created by:</p>
+    <a href="https://github.com/aamharris">Aaron</a>
+    <a href="https://github.com/hanieldanson">Daniel</a>
+    <a href="https://github.com/elm0829">Edward</a>
+    <a href="https://github.com/thejdavid">JD</a>
+  </div>
 </div>
+</body>
+</html>

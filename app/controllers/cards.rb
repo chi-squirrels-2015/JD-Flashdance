@@ -23,9 +23,9 @@ post "/decks/:deck_id/:card_id" do
    if @card.id != 1
      @card_previous = Card.find(previous_id)
      if params[:answer] == @card_previous.answer
-       @display = "The previous answer was correct"
+       @display = "The previous answer was correct!"
      else
-       @display = "Incorrect the answer was #{@card_previous.answer}"
+       @display = "Incorrect the answer was #{@card_previous.answer.capitalize}"
      end
    end
    erb :"cards/index"

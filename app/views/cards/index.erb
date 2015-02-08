@@ -1,11 +1,32 @@
-<% if @display %>
-<p style="color:red"><%= @display %></p>
-<% end %>
-<p> <%= @card.question %> </p>
-<div id="container">
-<form method="POST" action="/decks/1/<% @card.id = @card.id +=1 %><%=@card.id%>">
-<input type="text" name="answer" placeholder="put your answer here">
-</br> <input type="submit" value="check your answer">
-</form>
-</div>
-
+<html>
+<head>
+  <title>JD's Flashcard Dance</title>
+  <link rel="stylesheet" href="../../public/css/application.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class='container'>
+      <div class="topbar">
+        <h1>Welcome to JD's Flashdance Flashcard Extravaganza!</h1>
+      </div>
+      <% if @display %>
+        <p class="result"><%= @display %></p>
+      <% end %>
+        <p> <%= @card.question %> </p>
+      <div id="container">
+        <form method="POST" action="/decks/1/<% @card.id = @card.id +=1 %><%=@card.id%>">
+        <input type="text" name="answer" placeholder="Put your answer here"></br>
+        <input type="submit" value="Check your answer">
+        </form>
+      </div>
+    </form>
+    <div class="bottombar">
+      <p>Created by:</p>
+      <a href="https://github.com/aamharris">Aaron</a>
+      <a href="https://github.com/hanieldanson">Daniel</a>
+      <a href="https://github.com/elm0829">Edward</a>
+      <a href="https://github.com/thejdavid">JD</a>
+    </div>
+  </div>
+</body>
+</html>
