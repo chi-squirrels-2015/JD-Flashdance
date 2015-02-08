@@ -50,7 +50,10 @@ form > input[type="button"] {
 form > input[type="button"]:hover {
   background-color: #fe5d00;
 }
-
-
-
 /*form > input[type="button"] {}*/
+<<<<<<< HEAD
+=======
+.container {
+  max-width: 800px;
+}
+>>>>>>> 445c468a7238bb5650dd317ad2402f37c91bc620

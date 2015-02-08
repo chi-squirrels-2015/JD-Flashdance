@@ -1,0 +1,11 @@
+<% if @display %>
+<p style="color:red"><%= @display %></p>
+<% end %>
+<p> <%= @card.question %> </p>
+<div id="container">
+<form method="POST" action="/decks/1/<% @card.id = @card.id +=1 %><%=@card.id%>">
+<input type="text" name="answer" placeholder="put your answer here">
+</br> <input type="submit" value="check your answer">
+</form>
+</div>
+
